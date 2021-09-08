@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SIPS HRMS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"> </string>
+    <string name="nav_header_subtitle"> </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+    <string name="title_activity_main_new">MainActivityNew</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="fcm_id">d7PysKBSVqY:APA91bHIUEiRuCIlqit4UUf7D1b8KPaz_ES9t0N6wWxEMITivwFAMD-OP86XQC8MLU7JbEYN-XUTxPJ7l-SRjYiZ9nu66-vQMqAZaTIh6JthXjMvBJxyAdkPp9h1S1p1isWHtRrSll-V</string>
+
+</resources>

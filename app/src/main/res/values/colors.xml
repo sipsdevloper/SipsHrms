@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#616161</color>-->
+    <color name="colorPrimary">#174A7E</color>
+    <color name="colorPrimaryDark">#087EE4</color>
+    <color name="colorAccent">#36B9CC</color>
+    <color name="colorAccentdark">#174A7E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textback">#e5e5e5</color>
+    <color name="light_gray">#f5f5f5</color>
+    <color name="DeepGreen">#075602</color>
+    <color name="DeepOut">#a51818</color>
+
+</resources>

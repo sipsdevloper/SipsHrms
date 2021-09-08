@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="1dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_main_layout"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circularTextView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/male"
+                android:textColor="#ffffff"
+                android:minWidth="64dp"
+                android:minHeight="64dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_attchname"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:fontFamily="@font/open_sans_semibold"
+                android:maxLines="1"
+                android:text="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emp_name"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:maxLength="14"
+                android:padding="1dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/roboto_bold"
+                android:text="" />
+        </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:id="@+id/framell">
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:id="@+id/emp_desg"
+                    android:padding="2dp"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="24dp"
+            android:minWidth="24dp"
+            android:id="@+id/iv_attach"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_attach"/>
+
+
+
+
+
+    </LinearLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_margin="2dp"-->
+<!--        android:background="@color/light_gray"/>-->
+
+</androidx.cardview.widget.CardView>

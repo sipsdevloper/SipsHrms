@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "menuid": "011",
+      "menuname": "Core HR",
+      "submenu": [
+        {
+          "submenuid": "1511",
+          "submenuname": "Create MRF"
+        },
+        {
+          "submenuid": "1515",
+          "submenuname": "My Profile"
+        }
+      ]
+    },
+    {
+      "menuid": "022",
+      "menuname": "Attandance",
+      "submenu": [
+        {
+          "submenuid": "1512",
+          "submenuname": "Leave Approval"
+        },
+        {
+          "submenuid": "1516",
+          "submenuname": "Apply Leave"
+        }
+      ]
+    }
+  ]
+}

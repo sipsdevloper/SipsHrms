@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:id="@+id/swipeToRefresh"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Common.MainActivity">
+
+
+     <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_main_layout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:background="@color/cardview_light_background"
+                            android:id="@+id/r1_module"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:id="@+id/mod_image"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/leave"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="LEAVES"
+                                android:textSize="16sp"
+                                android:id="@+id/mod_name"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:id="@+id/mod_id"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:id="@+id/mod_image_name"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:id="@+id/mod_showhide"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/r2_module"
+                            android:background="@color/cardview_light_background"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/attendance"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="ATTENDANCE"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/r5_module"
+                            android:background="@color/cardview_light_background"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/team"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="TEAM"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:background="@color/cardview_light_background"
+                            android:id="@+id/r3_module"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/pay_slip"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="PAYSLIP"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/r4_module"
+                            android:background="@color/cardview_light_background"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/profile"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="PROFILE"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="2dp"
+                            android:id="@+id/r6_module"
+                            android:background="@color/cardview_light_background"
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/holiday"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:text="HOLIDAYS"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/roboto_bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:textColor="@color/colorPrimary"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text="MIT"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/karla_bold"
+                                />
+
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/birthtext"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/karla_bold"
+                android:text="TODAY'S BIRTHDAY"/>
+
+
+            <!--            <HorizontalScrollView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/eventrecyclerView"/>
+                <!--                    <include layout="@layout/item_celebration"/>-->
+                <!--                    <include layout="@layout/item_celebration"/>-->
+                <!--                    <include layout="@layout/item_celebration"/>-->
+            </LinearLayout>
+
+
+            <!--            </HorizontalScrollView>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/newjtext"
+                android:fontFamily="@font/karla_bold"
+                android:text="NEW JOININGS"/>
+
+            <!--            <HorizontalScrollView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newjoinrecyclerView"/>
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+            </LinearLayout>
+
+
+            <!--            </HorizontalScrollView>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:id="@+id/newanctext"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/karla_bold"
+                android:text="ANNOUNCEMENTS"/>
+
+            <!--            <HorizontalScrollView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/compancrecyclerView"/>
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+                <!--                    <include layout="@layout/item_new_joining"/>-->
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+     </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+

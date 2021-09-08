@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "254004319802",
+    "firebase_url": "https://sips-hrms.firebaseio.com",
+    "project_id": "sips-hrms",
+    "storage_bucket": "sips-hrms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254004319802:android:2fb93b8962928354d64703",
+        "android_client_info": {
+          "package_name": "com.sips.sipshrms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254004319802-n92eh34hd8ev4o5ktm66coimkge72pfo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sips.sipshrms",
+            "certificate_hash": "fb9b69f8f84d6b41b0723bf44725b8fa49798a41"
+          }
+        },
+        {
+          "client_id": "254004319802-la728jjahsinpa7l91n7quc7s88hnufs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFMtMl3u2qASDTKS4uvO1yFAKEH0MsZqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254004319802-la728jjahsinpa7l91n7quc7s88hnufs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

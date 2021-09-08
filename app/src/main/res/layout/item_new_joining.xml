@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="100dp"
+    android:padding="2dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularTextView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/male"
+            android:layout_above="@id/ll_text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_text"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/karla_bold"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:id="@+id/tv_fname"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEPARTMENT"
+                android:fontFamily="@font/karla_regular"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:id="@+id/tv_dept"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOCATION"
+                android:fontFamily="@font/karla_regular"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:id="@+id/tv_loc"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

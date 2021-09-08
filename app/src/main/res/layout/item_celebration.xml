@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:id="@+id/ll_celab"
+         android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:id="@+id/ll_main_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ll_text"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circularTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="36dp"
+                    android:src="@drawable/male"
+                    android:layout_above="@id/ll_text"
+                    android:layout_gravity="left"
+                    android:text="11"
+                    android:textColor="#ffffff"
+                    android:padding="3dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:text="BIRTHDAY"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_event"
+                    android:singleLine="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ll_text"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RANDHIR"
+                    android:singleLine="true"
+                    android:fontFamily="@font/karla_bold"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_fname"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RANDHIR"
+                    android:singleLine="true"
+                    android:fontFamily="@font/karla_bold"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:id="@+id/tv_emp_id"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEPARTMENT"
+                    android:singleLine="true"
+                    android:fontFamily="@font/karla_regular"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_dept"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="LOCATION"
+                    android:fontFamily="@font/karla_regular"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_loc"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

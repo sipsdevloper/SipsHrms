@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Common.ManpowerPlanningForm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/head1"
+                    android:text="MANPOWER REQUISITION FORM"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="DESIGNATION"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="No. of Vacancies"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:padding="2dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Consider During Project Bidding"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Required Duration"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Location"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Requirement Raised by Client"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Reason vacancy rose"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="If Replacement"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Key responsibilities"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:minHeight="75dp"
+                        android:padding="2dp"
+                        android:gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Required Eduvational Qualification"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Age Limit"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Gender Preferred"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Required Date"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Experience in years"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/focusable_border"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/head3"
+                        android:padding="2dp"
+                        android:text="Budget"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/margintop"
+                    android:layout_marginLeft="@dimen/margintop"
+                    android:layout_marginBottom="@dimen/margintop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:padding="2dp"
+                        android:minHeight="@dimen/edtext_width"
+                        android:layout_gravity="start"
+                        android:background="@drawable/focusable_border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margintop"        android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/head2"
+                        android:padding="5dp"
+                        android:text="APPROVE"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_flat_gradient"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textSize="@dimen/head2"
+                        android:text="REJECT"
+                        android:textColor="@color/white"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/button_flat_gradient"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

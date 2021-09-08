@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editmesseage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:background="@drawable/focusable_border"
+        android:inputType="text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:id="@+id/first_tv"
+        android:background="@drawable/circular_border"
+        android:fontFamily="@font/karla_regular"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Happy Birthday !"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/karla_regular"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:id="@+id/second_tv"
+        android:background="@drawable/circular_border"
+        android:text="Wishing you Happy Birthday dear!"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="@font/karla_regular"
+        android:layout_margin="5dp"
+        android:id="@+id/third_tv"
+        android:background="@drawable/circular_border"
+        android:text="Happy Birthday, Enjoy the day  !"/>
+
+</LinearLayout>
